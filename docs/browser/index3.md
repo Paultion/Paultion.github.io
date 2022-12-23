@@ -4,7 +4,7 @@ nav:
   title: 浏览器
   order: 1
 group: 
-  title:   浏览器分组
+  title:   浏览器分组3
 ---
 
-browser
+browser3

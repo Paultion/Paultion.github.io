@@ -7,4 +7,4 @@ group:
   title:   浏览器分组
 ---
 
-browser
+browser2
