@@ -9,7 +9,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-18.04
   steps:
-    - name: Checkout code
+    - name: Checkout
       uses: actions/checkout@master
 
     - name: Use Node.js
