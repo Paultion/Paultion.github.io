@@ -1,0 +1,19 @@
+# system
+.DS_Store
+
+# project
+interview/
+!/interview/面试导图.xmind
+
+# interview/面试时间.md
+# interview/面试题.pdf
+# interview/面试问题解答.md
+# interview/面试问题收集.md
+
+node_modules/
+yarn-error.log
+.cache
+
+# editors
+.idea/*
+.vscode/*

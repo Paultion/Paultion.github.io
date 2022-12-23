@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "dumi dev",
+    "build": "dumi build"
+  },
+  "devDependencies": {
+    "dumi": "^2.0.16",
+    "dumi-theme-mobile": "^2.0.1"
+  }
+}
