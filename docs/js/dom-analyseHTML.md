@@ -4,6 +4,7 @@ group:
   title: dom
 ---
 
+```html
 <html>
   <head></head>
   <body>
@@ -77,3 +78,4 @@ group:
     </script>
   </body>
 </html>
+```

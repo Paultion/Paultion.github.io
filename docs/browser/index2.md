@@ -5,6 +5,7 @@ nav:
   order: 1
 group: 
   title:   浏览器分组
+  order: 2
 ---
 
 browser2

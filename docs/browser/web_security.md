@@ -1,3 +1,14 @@
+---
+title: web安全
+nav:
+  title: 浏览器
+  order: 1
+group: 
+  title:  web安全
+  order: 1
+
+---
+
 1. 跨站脚本攻击 XSS(Cross Site Scripting)
 
    - 介绍：web页面插入恶意script，访问页面时恶意脚本执行攻击用户

@@ -2,7 +2,7 @@
 title: 防抖节流
 ---
 
-```
+```javascript
 
 const ctx = {
   name: 'Paultion',

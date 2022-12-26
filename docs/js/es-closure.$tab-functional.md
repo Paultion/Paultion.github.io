@@ -1,3 +1,4 @@
+```js
 const funcs = [
   function a(args) {
     return args + 1;
@@ -7,15 +8,17 @@ const funcs = [
   },
   function c(args) {
     return args + 2;
-  }
-];                                                                                                                             
+  },
+];
 
 function compose(...funcs) {
   if (funcs.length === 0) return arg => arg;
   if (funcs.length === 1) return funcs[0];
 
   return funcs.reduce(
-    (a, b) => (...args) => a(b(...args))
+    (a, b) =>
+      (...args) =>
+        a(b(...args))
   );
 }
 
@@ -26,9 +29,11 @@ function add(a, b, c, d, e, f) {
   return [...arguments].reduce((a, b) => a + b);
 }
 
-
 function addWithCurry(fn) {
-  const c = (...args) => (args.length === fn.length ? fn(...args) : (...args1) => c(...args, ...args1));
+  const c = (...args) =>
+    args.length === fn.length
+      ? fn(...args)
+      : (...args1) => c(...args, ...args1);
   return c;
 }
 
@@ -53,16 +58,17 @@ function add2() {
   return _adder;
 }
 
-
 function test1(a, b, c) {
   return [...arguments].reduce((x, y) => x * y);
 }
 
 function testCurry(fn) {
-  const c = (...args) => (fn.length === args.length ? fn(...args) : (...args1) => c(...args, ...args1));
+  const c = (...args) =>
+    fn.length === args.length
+      ? fn(...args)
+      : (...args1) => c(...args, ...args1);
   return c;
 }
-
 
 /*
   实现add方法
@@ -77,6 +83,7 @@ function add3() {
 
   return {
     output: () => fn.args.reduce((m, n) => m + n),
-    [fn.name]: fn
+    [fn.name]: fn,
   };
 }
+```

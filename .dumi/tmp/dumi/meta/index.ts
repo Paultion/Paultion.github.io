@@ -17,9 +17,10 @@ import { demos as dm12, frontmatter as fm12, toc as toc12, texts as txt12 } from
 import { demos as dm13, frontmatter as fm13, toc as toc13, texts as txt13 } from '/Users/paultion/Desktop/paultion.github.io/docs/node/index.md?type=meta';
 import { demos as dm14, frontmatter as fm14, toc as toc14, texts as txt14 } from '/Users/paultion/Desktop/paultion.github.io/docs/js/index.md?type=meta';
 import { demos as dm15, frontmatter as fm15, toc as toc15, texts as txt15 } from '/Users/paultion/Desktop/paultion.github.io/docs/index.md?type=meta';
-import { demos as dm16, frontmatter as fm16, toc as toc16, texts as txt16 } from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-closure.$tab-debounce-throttle.md?type=meta';
-import { demos as dm17, frontmatter as fm17, toc as toc17, texts as txt17 } from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-closure.$tab-functional.md?type=meta';
-import { demos as dm18, frontmatter as fm18, toc as toc18, texts as txt18 } from '/Users/paultion/Desktop/paultion.github.io/docs/js/css-flex.$tab-example.md?type=meta';
+import { demos as dm16, frontmatter as fm16, toc as toc16, texts as txt16 } from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-closure.$tab-debounce-throttle-example.md?type=meta';
+import { demos as dm17, frontmatter as fm17, toc as toc17, texts as txt17 } from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-closure.$tab-debounce-throttle.md?type=meta';
+import { demos as dm18, frontmatter as fm18, toc as toc18, texts as txt18 } from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-closure.$tab-functional.md?type=meta';
+import { demos as dm19, frontmatter as fm19, toc as toc19, texts as txt19 } from '/Users/paultion/Desktop/paultion.github.io/docs/js/css-flex.$tab-example.md?type=meta';
 
 export { components } from './atoms';
 export { tabs } from './tabs';
@@ -72,7 +73,7 @@ export const filesMeta = {
     toc: toc7,
     texts: txt7,
     demos: dm7,
-    tabs: ["docs/js/es-closure.$tab-debounce-throttle","docs/js/es-closure.$tab-functional"],
+    tabs: ["docs/js/es-closure.$tab-debounce-throttle-example","docs/js/es-closure.$tab-debounce-throttle","docs/js/es-closure.$tab-functional"],
   },
   'docs/network/index': {
     frontmatter: fm8,
@@ -123,23 +124,29 @@ export const filesMeta = {
     texts: txt15,
     demos: dm15,
   },
-  'docs/js/es-closure.$tab-debounce-throttle': {
+  'docs/js/es-closure.$tab-debounce-throttle-example': {
     frontmatter: fm16,
     toc: toc16,
     texts: txt16,
     demos: dm16,
   },
-  'docs/js/es-closure.$tab-functional': {
+  'docs/js/es-closure.$tab-debounce-throttle': {
     frontmatter: fm17,
     toc: toc17,
     texts: txt17,
     demos: dm17,
   },
-  'docs/js/css-flex.$tab-example': {
+  'docs/js/es-closure.$tab-functional': {
     frontmatter: fm18,
     toc: toc18,
     texts: txt18,
     demos: dm18,
+  },
+  'docs/js/css-flex.$tab-example': {
+    frontmatter: fm19,
+    toc: toc19,
+    texts: txt19,
+    demos: dm19,
   },
 }
 
