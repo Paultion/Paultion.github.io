@@ -5,7 +5,7 @@ nav:
   title: 浏览器
   order: 1
 group:
-  title: 浏览器
+  title: browser
   order: 1
 ---
 
