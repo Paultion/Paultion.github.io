@@ -1,7 +1,7 @@
 ---
-title: 浏览器
+title: browser
 nav:
-  title: 浏览器
+  title: browser
   order: 1
 ---
 

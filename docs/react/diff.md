@@ -1,10 +1,8 @@
 ---
-title: diff
-group: 
-  title: diff
+title: diff策略
 ---
 
-##### diff 策略
+##### diff 策略简介
 
 > ###### tree diff
 >
@@ -14,7 +12,7 @@ group:
 >    ![treeDiff](/react/diff/treeDiff.png)
 >
 > ###### component diff
->
+>  
 > 拥有相同类的两个组件将会生成相似的的树形结构，拥有不同类的两个组件将会生成不同的树形结构
 >
 > 1. 同一类型的组件按照原策略继续比较 VDOM，可以通过 shouldComponentUpdate 优化是否更新
@@ -24,4 +22,5 @@ group:
 > ###### element diff
 >
 > 对于同一层级的一组子节点，通过唯一 id 区分
+> 遍历newChildren，比较oldIndex与lastReplacedIndex
 > ![elementDiff](/react/diff/elementDiff.png)

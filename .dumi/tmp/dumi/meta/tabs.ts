@@ -9,11 +9,14 @@ import * as tab4 from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-ext
 import * as tab5 from '/Users/paultion/Desktop/paultion.github.io/docs/FAQ/es-parse_camel.$tab-parse_2_camel.md';
 import * as tab6 from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-closure.$tab-debounce-throttle.md';
 import * as tab7 from '/Users/paultion/Desktop/paultion.github.io/docs/FAQ/es-eventloop.$tab-generator.md';
-import * as tab8 from '/Users/paultion/Desktop/paultion.github.io/docs/FAQ/es-eventloop.$tab-lazy_man.md';
-import * as tab9 from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-closure.$tab-functional.md';
-import * as tab10 from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-eventloop.$tab-promise.md';
-import * as tab11 from '/Users/paultion/Desktop/paultion.github.io/docs/network/protocol.$tab-http.md';
-import * as tab12 from '/Users/paultion/Desktop/paultion.github.io/docs/js/css-flex.$tab-example.md';
+import * as tab8 from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-prototype.$tab-instanceof.md';
+import * as tab9 from '/Users/paultion/Desktop/paultion.github.io/docs/FAQ/es-eventloop.$tab-lazy_man.md';
+import * as tab10 from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-closure.$tab-functional.md';
+import * as tab11 from '/Users/paultion/Desktop/paultion.github.io/docs/js/es-eventloop.$tab-promise.md';
+import * as tab12 from '/Users/paultion/Desktop/paultion.github.io/docs/network/protocol.$tab-http.md';
+import * as tab13 from '/Users/paultion/Desktop/paultion.github.io/docs/react/diff.$tab-reconcile.md';
+import * as tab14 from '/Users/paultion/Desktop/paultion.github.io/docs/js/css-flex.$tab-example.md';
+import * as tab15 from '/Users/paultion/Desktop/paultion.github.io/docs/react/diff.$tab-key.md';
 
 export const tabs = {
   'docs/js/es-eventloop.$tab-promise-all-race-resolve-reject-allSettled': { key: 'promise-all-race-resolve-reject-allSettled', components: tab0 },
@@ -24,9 +27,12 @@ export const tabs = {
   'docs/FAQ/es-parse_camel.$tab-parse_2_camel': { key: 'parse_2_camel', components: tab5 },
   'docs/js/es-closure.$tab-debounce-throttle': { key: 'debounce-throttle', components: tab6 },
   'docs/FAQ/es-eventloop.$tab-generator': { key: 'generator', components: tab7 },
-  'docs/FAQ/es-eventloop.$tab-lazy_man': { key: 'lazy_man', components: tab8 },
-  'docs/js/es-closure.$tab-functional': { key: 'functional', components: tab9 },
-  'docs/js/es-eventloop.$tab-promise': { key: 'promise', components: tab10 },
-  'docs/network/protocol.$tab-http': { key: 'http', components: tab11 },
-  'docs/js/css-flex.$tab-example': { key: 'example', components: tab12 },
+  'docs/js/es-prototype.$tab-instanceof': { key: 'instanceof', components: tab8 },
+  'docs/FAQ/es-eventloop.$tab-lazy_man': { key: 'lazy_man', components: tab9 },
+  'docs/js/es-closure.$tab-functional': { key: 'functional', components: tab10 },
+  'docs/js/es-eventloop.$tab-promise': { key: 'promise', components: tab11 },
+  'docs/network/protocol.$tab-http': { key: 'http', components: tab12 },
+  'docs/react/diff.$tab-reconcile': { key: 'reconcile', components: tab13 },
+  'docs/js/css-flex.$tab-example': { key: 'example', components: tab14 },
+  'docs/react/diff.$tab-key': { key: 'key', components: tab15 },
 }

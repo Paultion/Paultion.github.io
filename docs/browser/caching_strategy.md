@@ -49,3 +49,5 @@ group:
 > - Etag / If-None-Match（当前资源文件的唯一标识）
 > Last-Modified 以秒计，如果在无法感知的时间范围内修改了文件会命中缓存
 > 资源周期性变化无法命中协商缓存
+
+![cache](/browser/caching_strategy/cache.jpeg)

@@ -1,7 +1,7 @@
 ---
-title: 计算机网络
+title: network
 nav:
-  title: 计算机网络
+  title: network
   order: 3
 ---
 
