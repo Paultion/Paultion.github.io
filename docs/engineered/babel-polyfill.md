@@ -1,5 +1,6 @@
 ---
 title: babel
+debug:  true
 order: 1
 group:
   title: babel

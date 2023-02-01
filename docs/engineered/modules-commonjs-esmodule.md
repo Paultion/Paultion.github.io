@@ -1,5 +1,6 @@
 ---
 title: 模块
+debug:  true
 order: 1
 group:
   title: modules

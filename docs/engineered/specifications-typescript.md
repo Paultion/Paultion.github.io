@@ -1,6 +1,7 @@
 ---
 title: typescript
 order: 1
+debug:  true
 group:
   title: specifications
 ---
@@ -17,7 +18,7 @@ function keywordsInTS() {}
 function infer() {
   // 1. infer解包
   function inferConstructType() {
-    type Ids = number[];
+    type Ids = number[];-
     type Names = string[];
 
     // type Unpacked<T> = T extends Names ? string : T extends Ids ? number : T;

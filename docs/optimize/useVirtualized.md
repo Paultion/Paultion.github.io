@@ -1,5 +1,6 @@
 ---
 title: 长列表渲染
+debug: true
 ---
 
 ```js
