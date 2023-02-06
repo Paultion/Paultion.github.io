@@ -200,7 +200,7 @@ export const filesMeta = {
     toc: toc21,
     texts: txt21,
     demos: dm21,
-    tabs: ["docs/FAQ/es-eventloop.$tab-concurrence_control","docs/FAQ/es-eventloop.$tab-generator","docs/FAQ/es-eventloop.$tab-lazy_man"],
+    tabs: ["docs/FAQ/es-eventloop.$tab-concurrence_control","docs/FAQ/es-eventloop.$tab-generator","docs/FAQ/es-eventloop.$tab-lazy_man","docs/FAQ/es-eventloop.$tab-a"],
   },
   'docs/FAQ/es-fibonacci': {
     frontmatter: fm22,

@@ -18,9 +18,16 @@ _instanceof([], Object)
 ```
 
 ```js
+class Reference() {
+  static [Symbol.hasInstance](o){
+    return o instanceof Object || o instanceof Function && o !== null
+  }
+}
+
 function _new(Func, ...args){
   const o = Object.create(Func.prototype);
   const result = Func.call(o, ...args);
-  return result instanceof Object ? result : o;
+
+  return result instanceof Reference ? result : o;
 }
 ```
