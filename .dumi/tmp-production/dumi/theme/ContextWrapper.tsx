@@ -40,7 +40,7 @@ export default function DumiContextWrapper() {
       locales,
       loading,
       setLoading,
-      themeConfig: {"footer":"Copyright © 2022 | Powered by <a href=\"https://d.umijs.org\" target=\"_blank\" rel=\"noreferrer\">dumi</a>"},
+      themeConfig: {"footer":false,"name":"","logo":"/logo.png"},
     }}>
       {outlet}
     </SiteContext.Provider>
