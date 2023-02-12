@@ -10,7 +10,7 @@ import { createHistory } from './core/history';
 import { ApplyPluginsType } from 'umi';
 
 
-const publicPath = "docs/";
+const publicPath = "/";
 const runtimePublicPath = false;
 
 async function render() {
