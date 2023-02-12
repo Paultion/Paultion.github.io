@@ -5,6 +5,7 @@
 notice.md
 *test*.*
 */test
+/dist
 
 node_modules/
 yarn-error.log

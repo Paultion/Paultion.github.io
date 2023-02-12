@@ -21,7 +21,7 @@ jobs:
 
     - name: Build Project
       run: |
-        npm install
+        yarn
         npm run build  
 
     - name: Deploy to Github
