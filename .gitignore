@@ -4,6 +4,7 @@
 # project
 notice.md
 *test*.*
+*/test
 
 node_modules/
 yarn-error.log
