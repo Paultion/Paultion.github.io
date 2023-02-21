@@ -19,7 +19,7 @@ function parseThousands1(num) {
   if (index > -1) {
     decimal = ary.splice(index).join('');
   }
-
+ 
   const integer = ary.reverse().reduce((prev, next, index) => {
     return (index % 3 ? next : next + ',') + prev;
   });
@@ -29,6 +29,8 @@ function parseThousands1(num) {
 // console.log(parseThousands1(12345678.12345678));
 
 // 解2
+// /b单词边界 /B非单词边界
+
 function parseThousands2(num) {
   const str = num + '';
   return str.replace(/\B(?=(\d{3})+(?!\d))/g, ',');

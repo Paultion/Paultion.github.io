@@ -7,6 +7,7 @@ export default defineConfig({
     footer: false,
   },
   alias: {
-    common: '/common'
+    common: '/common',
+    src: '/src',
   }
 });
