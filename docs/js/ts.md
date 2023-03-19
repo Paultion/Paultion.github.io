@@ -3,13 +3,29 @@ title: typescript
 order: 1
 debug: true
 group:
-  title: specifications
+  title: ts
 ---
 
 ##### 交叉类型(&)
 
 ```ts
 type Mixin<T, X> = T & X;
+```
+
+##### 联合类型
+```ts
+// 在 typescript 中获取枚举键作为联合字符串的通用类型？
+enum State {
+  resolve ='fullfilled',
+  reject = 'rejected',
+  pending = 'pending'
+}
+type st = typeof State;
+
+type KeysOfEnum<T> =  keyof T extends 'toString' ? never : keyof T;
+
+type StateKeys = KeysOfEnum<State>
+
 ```
 
 ##### 映射类型(in)

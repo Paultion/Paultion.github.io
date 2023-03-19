@@ -1,9 +1,6 @@
 ---
 title: 缓存策略
 order: 3
-nav:
-  title: 浏览器
-  order: 1
 group:
   title: browser
   order: 1

@@ -1,12 +1,36 @@
 ---
 title: fiber
+order: 3
+group:
+  title: architecture
 ---
 
-``````JS
+##### Fiber含义
+> 1. React 15之前的Reconciler采用递归的方式执行，数据保存在递归调用栈中，被称之为stack Reconciler。React 16+的Reconciler基于Fiber节点实现，将递归的无法中断的更新重构为异步的可中断更新，被称为Fiber Reconciler
+> 2. 作为静态的数据结构，Fiber节点和React Element一一对应，保存了该组件的类型（函数组件/类组件/原生组件）、对应的DOM节点信息。
+> 3. 作为动态的工作单元，每个Fiber节点保存了本次更新中该组件改变的状态，要执行的工作（需要被删除/插入页面中/更新）
+
+##### Fiber工作原理
+> ###### 双缓存Fiber树
+> 在React中最多会同时存在两棵Fiber树。当前屏幕上显示内容对应的Fiber树称为current Fiber树，正在内存中构建的Fiber树称为workInProgress Fiber树。
+> current Fiber树中的Fiber节点被称为current fiber，workInProgress Fiber树中的Fiber节点被称为workInProgress fiber，他们通过alternate属性连接。
+```javascript
+currentFiber.alternate === workInProgressFiber;
+workInProgressFiber.alternate === currentFiber;
+```
+
+> React应用的根节点通过使current指针在不同Fiber树的rootFiber间切换来完成current Fiber树指向的切换
+
+```JS
  /*
     深度优先遍历，存储当前渲染的节点，等待浏览器空闲时再执行
 */
 
+/*
+    A1
+  B1    B2
+C1 C2 C3  C4
+*/
       const element = {
         type: 'div',
         props: {
@@ -35,9 +59,23 @@ title: fiber
             {
               type: 'div',
               props: {
-                id: 'B2'
+                id: 'B2',
+                children: [
+                  {
+                    type: 'div',
+                    props: {
+                      id: 'C3'
+                    }
+                  },
+                  {
+                    type: 'div',
+                    props: {
+                      id: 'C4'
+                    }
+                  }
+                ]
               }
-            }
+            },            
           ]
         }
       };
@@ -59,7 +97,6 @@ title: fiber
       // 工作循环 —— 渲染DOM
       function workLoop(deadline) {
         //如果有当前的工作单元,就执行它,并返回一个工作单元
-        console.log(nextUnitOfWork);
         while (nextUnitOfWork) {
           nextUnitOfWork = performUnitOfWork(nextUnitOfWork);
         }
@@ -185,6 +222,8 @@ title: fiber
       // 挂载DOM
       function commitRoot() {
         let currentFiber = workInProgressRoot.firstEffect;
+
+        console.log(workInProgressRoot, 'workInProgressRoot~~')
         while (currentFiber) {
           // 只要是待插入的节点都直接插入父级元素
           currentFiber.effectTag === 'PLACEMENT' && currentFiber.return.stateNode.appendChild(currentFiber.stateNode);

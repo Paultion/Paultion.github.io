@@ -34,7 +34,7 @@ function dispatchAction(queue, action) {
     action,
     next: null
   }
-
+      
   // 环状单向链表操作
   if (queue.pending === null) {
     update.next = update;
@@ -71,6 +71,7 @@ function useState(initialState) {
   }
 
   let baseState = hook.memoizedState;
+
   if (hook.queue.pending) {
     let firstUpdate = hook.queue.pending.next;
 
@@ -90,7 +91,11 @@ function useState(initialState) {
 function App() {
   const [num, updateNum] = useState(0);
 
-  return <p onClick={() => updateNum(num => num + 1)}>{num}</p>;
+  return <p onClick={() => {
+    updateNum(num => num + 1);
+    updateNum(num => num + 2);
+    updateNum(num => num + 3);
+  }}>{num}</p>;
 }
 
 export default App;

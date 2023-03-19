@@ -1,9 +1,6 @@
 ---
 title: 同源策略
 order: 4
-nav:
-  title: 浏览器
-  order: 1
 group:
   title: browser
   order: 1

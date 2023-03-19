@@ -20,6 +20,6 @@
     },
     "strict": false
   },
-  "include": ["**/*.md"],
+  "include": ["**/*.md", "docs/test/index.js"],
   "exclude": ["node_modules"]
 }

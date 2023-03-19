@@ -1,6 +1,7 @@
 ---
 title: 长列表渲染
-debug: true
+group:
+  title: optimize
 ---
 
 ```js

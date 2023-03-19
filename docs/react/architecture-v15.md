@@ -1,16 +1,16 @@
 ---
-title: React 15
+title: React v15
+order: 1
 group:
   title: architecture
-base: blank  
 ---
 
 ##### React 15架构
 > ###### Reconciler
-> 负责找出变化的组件
+> 负责找出变化的组件 
 > 1. 调用函数组件或class render，将JSX转化为虚拟DOM
 > 2. 将虚拟DOM和上次的虚拟ODM作对比
-> 3. 对比找出本次更新中变化的DOM
+> 3. 对比找出本次更新中变化的DOM.
 > ###### Renderer(ReactDOM|ReactNative|ReactTest..etc.. )
 > 接受Reconciler通知将变化的组件渲染到页面
 

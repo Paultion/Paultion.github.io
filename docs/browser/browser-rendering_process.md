@@ -1,9 +1,6 @@
 ---
 title: 渲染过程
 order: 2
-nav:
-  title: 浏览器
-  order: 1
 group:
   title: browser
   order: 1

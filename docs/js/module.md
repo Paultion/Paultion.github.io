@@ -3,7 +3,7 @@ title: 模块
 debug:  true
 order: 1
 group:
-  title: modules
+  title: module
 ---
 
 [CommonJs](https://juejin.cn/post/6892786383249735687)

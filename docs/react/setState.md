@@ -77,7 +77,6 @@ title: setState
           this.$updater.pendingStates.length = 0;
 
           const oldElement = this.domElement;
-          console.log(oldElement);
           const newElement = this.createDOMFromDOMString();
           oldElement.parentElement.replaceChild(newElement, oldElement);
         }

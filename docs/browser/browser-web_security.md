@@ -1,9 +1,6 @@
 ---
 title: web安全
 order: 1
-nav:
-  title: 浏览器
-  order: 1
 group:
   title: browser
   order: 1
