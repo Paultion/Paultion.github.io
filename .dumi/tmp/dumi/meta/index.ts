@@ -273,7 +273,7 @@ export const filesMeta = {
     toc: toc30,
     texts: txt30,
     demos: dm30,
-    tabs: ["docs/react/hooks/index.$tab-use_use_sync_external_store","docs/react/hooks/index.$tab-use_deferred_value","docs/react/hooks/index.$tab-use_transition","docs/react/hooks/index.$tab-use_todo_list"],
+    tabs: ["docs/react/hooks/index.$tab-use_use_sync_external_store","docs/react/hooks/index.$tab-use_deferred_value","docs/react/hooks/index.$tab-use_transition"],
   },
   'docs/FAQ/es-deep_copy': {
     frontmatter: fm31,

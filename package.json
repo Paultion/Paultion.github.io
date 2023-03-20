@@ -1,14 +1,15 @@
 {
   "scripts": {
-    "dev": "dumi dev",
-    "build": "dumi build"
+    "dev": "dumi dev & yarn server", 
+    "build": "dumi build",
+    "server": "nodemon ./src/index"
   },
   "devDependencies": {
     "dumi": "^2.0.16"
-    
   },
   "dependencies": {
     "ahooks": "^3.7.5",
-    "antd": "^5.2.0"
+    "antd": "^5.2.0",
+    "koa": "^2.14.1"
   }
 }
